@@ -38,6 +38,7 @@ if (localStorage.product != null) {
 submit.onclick = function () {
     let newpro = {
         title:title.value.toLowerCase(),
+        price:price.value,
         taxes:taxes.value,
         ads:ads.value,
         discount:discount.value,
@@ -94,7 +95,7 @@ function showData() {
     let table = '';
     for (let i = 0; i < dataPro.length; i++) {
         table += `    <tr>
-        <td>${i+1}</td>
+        <td>${i + 1}</td>
         <td>${dataPro[i].title}</td>
         <td>${dataPro[i].price}</td>
         <td>${dataPro[i].taxes}</td>
