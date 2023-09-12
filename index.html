@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruds</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="crud">
+<div class="head">
+    <h2>crud</h2>
+    <p>Product Management system</p>
+</div>
+
+<div class="inputs">
+<input type="text" placeholder="title" id="title">
+
+<div class="price">
+    <input onkeyup="gettotal()" type="number" placeholder="price" id="price">
+    <input onkeyup="gettotal()" type="number" placeholder="taxes" id="taxes">
+    <input onkeyup="gettotal()" type="number" placeholder="ads" id="ads">
+    <input onkeyup="gettotal()" type="number" placeholder="discount" id="discount">
+    <small id="total">323321</small>
+</div>
+<input type="number" placeholder="count" id="count">
+<input type="text" placeholder="category" id="category">
+<button id="submit">create</button>
+
+
+
+
+</div>
+
+
+<div class="outputs"></div>
+<div class="searchBlock">
+    <input type="text" onkeyup="searchData(this.value)" placeholder="search" id="search">
+    <div class="btnSearch">
+        <button onclick="getSearchMood(this.id)" id="searchTitle"> Search By Title</button>
+        <button onclick="getSearchMood(this.id)" id="searchCategory"> Search By category</button>
+    </div>
+</div>
+<div id="deleteAll">
+
+</div>
+<table>
+<tr>
+    <th>id</th>
+    <th>title</th>
+    <th>price</th>
+    <th>taxes</th>
+    <th>ads</th>
+    <th>discount</th>
+    <th>total</th>
+    <th>category</th> 
+    <th>update</th> 
+    <th>delete</th> 
+</tr>
+
+<tbody id="tbody">
+    <tr>
+        <td>1</td>
+        <td>samsung</td>
+        <td>2000</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>2100</td>
+        <td>phone</td>
+        <td><button id="update">update</button></td>
+        <td><button id="delete">delete</button></td>
+    </tr>
+</tbody>
+</table>
+
+
+</div>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
